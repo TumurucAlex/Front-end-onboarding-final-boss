@@ -18,20 +18,30 @@ export default class DonutsCreate extends React.Component {
     render() {
         return (
             <main>
+                <div className="donuts">
+                    <div className="donuts__container">
+                        <img src="../../../../public/images/donut1.png" />
+                    </div>
                 <AutoForm schema={DonutsSchema} onSubmit={this.onSubmit}>
-                    <AutoField name="name"/>
-                    <ErrorField name="name"/>
-
-                    <AutoField name="price"/>
-                    <ErrorField name="price"/>
-
+                <div className="comestible__input">
                     <AutoField name="isComestible"/>
                     <ErrorField name="isComestible"/>
-
+                    </div>
+                    
+                    <div className="name__input">
+                    <AutoField name="name"/>
+                    <ErrorField name="name"/>
+                    </div>
+                     <div className="price__input">
+                    <AutoField name="price"/>
+                    <ErrorField name="price"/>
+                    </div>
+                    
                     <button type="submit">
-                        Create donut
+                        Create
                     </button>
                 </AutoForm>
+                </div>
             </main>
         )
     }

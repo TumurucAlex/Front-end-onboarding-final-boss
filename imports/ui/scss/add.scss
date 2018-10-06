@@ -1,32 +1,32 @@
 .AddingProduct{
-    display:block;
+
    
     width: 100%;
-    height: 500px;
+    height: 530px;
     background-color: #bd8cbf;
     .ProductAdd{
         color:white;
-        width: 30%;
+        width: 25%;
         height: auto;
         background-color: #440e62;
         border-radius: 30px;
         margin:auto;
         padding: 20px;
         text-align:center;
-        position:relative;
         margin:auto;
-        margin-top:110px;
+        
             h1{
                 margin-bottom: 0px;
             }
             p{  margin-top: 5px;
-                margin-bottom: 40px;
+                margin-bottom: 20px;
                 font-size: 10px;
             }
             .donuts{
-                width:70%;
+                width:90%;
                 margin:auto;
                 margin-bottom:30px;
+              
                 p{  
                     margin-left: 10px;
                     margin-bottom: 10px;
@@ -35,7 +35,7 @@
                 }
             }
             button{
-                width: 70%;
+                width: 90%;
                 background-color:#f26d7d;padding: 10px 0px 10px 0px;
                 color: white;
                 border: none;
@@ -43,7 +43,7 @@
                 border-radius: 10px ;
             }
             .name__input, .price__input{
-                width:70%;
+                width:90%;
                 margin:auto;
 
                 label{display:none;}
@@ -61,7 +61,7 @@
                 
             }
         .comestible__input{
-            width: 70%;
+            width: 90%;
             font-size: 20px;
             margin-bottom: 20px;
             margin:auto;
@@ -69,6 +69,22 @@
             margin-left: 10px;
             margin-bottom: 20px;}
         }
-
+        .donuts__container{
+            
+            margin:auto;
+            margin-bottom: 20px;
+            width: 90%;
+            img{
+            width: 90px;
+           padding: 2px;
+            }   
+            img:hover{
+            padding: 2px;
+            border: 1px solid white;
+            border-radius: 50%;
+            }   
+           
+        }
+       
     }
 }

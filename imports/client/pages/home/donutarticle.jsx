@@ -15,9 +15,21 @@ export default class DonutArticle extends React.Component{
                     Very mrs shed shew gave you.</p>
                 </div>
                 <div className="article second">
+                <h1>
+                    Civility vicinity graceful is it at. Improve up 
+                    at to on mention perhaps raising. 
+                </h1>
+                <p>
+                She travelling acceptance men unpleasant her especially
+                 entreaties law. Law forth but end any arise chief arose.
+                  Old her say learn these large. Joy fond many ham high 
+                  seen this. Few preferred continual sir led incommode neglected.
+                </p>
                 </div>
                 <div className="article third">
-                
+                <h1>Certain forbade picture now prevent carried she get 
+                    see sitting. Up twenty limits as months.</h1>
+                <p>Up twenty limits as months. Inhabit so perhaps of in to certain.</p>
                 </div>
 
             </div>

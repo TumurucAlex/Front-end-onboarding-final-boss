@@ -19,8 +19,12 @@ export default class DonutsCreate extends React.Component {
         return (
             <main>
                 <div className="donuts">
+             
                     <div className="donuts__container">
-                        <img src="../../../../public/images/donut1.png" />
+                    <p> Select a donut!</p>
+                        <img src="./images/donut1.png" />
+                        <img src="./images/donuts2.png" />
+                        <img src="./images/donuts3.png" />
                     </div>
                 <AutoForm schema={DonutsSchema} onSubmit={this.onSubmit}>
                 <div className="comestible__input">

@@ -4,7 +4,7 @@ import Login from '../users/Login';
 import Register from '../users/Register'
 import DonutsCreate from '../donuts/DonutsCreate';
 import DonutArticle from './donutarticle';
-//import bell from "../../../images/alarm.png";
+
 class Home extends Component {
     render() {
         return (
@@ -15,7 +15,7 @@ class Home extends Component {
                     </div>
                     <div className="NavBar__notification">
                         <div className="NavBar__notification__icon">
-                            <img src="../../../ui/images/alarm.png" alt="Aixic " height="42" width="42" />
+                            <img src="./images/bell.png"  />
                         </div>
                     </div>
                 </div>
@@ -35,11 +35,14 @@ class Home extends Component {
                             so perhaps of in to certain.
                         </p>
                     </div>
+                </div>
                     <div className="articles">
                         <DonutArticle />
                     </div>
-                </div>
+               
                 <div className="AddingProduct">
+                    <div className="separator">
+                    </div>
                     <div className="ProductAdd">
                         <h1>Add a donut</h1>
                         <p>don't take to long</p>

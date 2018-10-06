@@ -2,17 +2,21 @@
   "name": "frontend-final-boss",
   "private": true,
   "scripts": {
-    "start": "meteor run"
+    "watch": "--watch imports/ui/scss/input.scss -o imports/ui/css/index.css",
+    "start": "meteor run && watch"
   },
   "dependencies": {
     "babel-runtime": "^6.26.0",
     "bcrypt": "^1.0.3",
     "classnames": "^2.2.5",
+    "fbjs": "^1.0.0",
+    "invariant": "^2.2.4",
     "meteor-node-stubs": "^0.3.2",
     "prop-types": "^15.6.0",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "react-mounter": "^1.2.0",
+    "sass": "^1.14.1",
     "simpl-schema": "^0.4.2",
     "uniforms": "^1.22.1",
     "uniforms-unstyled": "^1.22.1"

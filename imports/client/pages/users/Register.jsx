@@ -26,19 +26,20 @@ class Register extends React.Component {
 
     render() {
         return (
-            <main>
+            <main className="cc-main">
+            <p className="title__container">donut<sup>Register</sup></p>
                 <AutoForm schema={RegisterSchema} onSubmit={this.onSubmit}>
-                    <AutoField name="email"/>
+                    <AutoField className="email" name="email"/>
                     <ErrorField name="email"/>
 
-                    <AutoField name="password" type="password"/>
+                    <AutoField  className="password" name="password" type="password"/>
                     <ErrorField name="password"/>
 
-                    <AutoField name="confirm_password" type="password"/>
+                    <AutoField className="cpassword" name="confirm_password" type="password"/>
                     <ErrorField name="confirm_password"/>
 
-                    <button type="submit">
-                        Register
+                    <button  type="submit">
+                        Sign Up
                     </button>
                 </AutoForm>
             </main>

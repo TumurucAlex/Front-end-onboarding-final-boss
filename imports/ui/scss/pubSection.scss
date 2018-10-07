@@ -37,8 +37,9 @@ background-color:#bd8cbf; }
         justify-content: center;
         padding: 20px;
         width: 33.3%;
-        height: 350px;
+        height: 20rem;
         box-sizing: border-box;
+        overflow: hidden;
         
         &.first{
            float: left;

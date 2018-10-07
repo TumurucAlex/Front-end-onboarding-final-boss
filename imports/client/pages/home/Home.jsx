@@ -4,6 +4,10 @@ import Login from '../users/Login';
 import Register from '../users/Register'
 import DonutsCreate from '../donuts/DonutsCreate';
 import DonutArticle from './donutarticle';
+import DonutsList from '../donuts/DonutsList';
+import DonutsContainer from '../donuts/DonutsContainer';
+import Footer from './footer';
+
 
 class Home extends Component {
     render() {
@@ -50,6 +54,14 @@ class Home extends Component {
                     </div>
 
                 </div>
+                <div className="donuts__list">
+                    <DonutsList />
+                   <DonutsContainer />
+                </div>
+                <div className="footer__container">
+                    <Footer />
+                </div>
+                
            </div>
         )
     }

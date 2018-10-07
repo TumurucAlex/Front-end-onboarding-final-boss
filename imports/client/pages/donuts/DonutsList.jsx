@@ -33,19 +33,35 @@ class DonutsList extends React.Component {
                 {
                     donuts.map(donut => {
                         return (
-                            <div key={donut._id}>
-                                <p>Name: {donut.name}</p>
-                                <p>Price: {donut.price}</p>
-                                <p>Is Comestible? : {donut.isComestible ? 'Yes' : 'No'}</p>
-                                {this.isDonutOwner(donut) &&
-                                <a href="" onClick={() => this.editDonut(donut._id)}>Edit</a>}
-                                {this.isDonutOwner(donut) &&
-                                <a href="" onClick={() => this.removeDonut(donut._id)}>Remove</a>}
+                            <div className="donuts__list__container" key={donut._id}>
+                                <div className="donuts__image">
+                                    <img src="./images/donut1.png" />
+                                </div>
+                                    <div className="donuts__specs">
+                                    <div className="donuts__name">
+                                        <h1>{donut.name}</h1>
+                                        <p>10.09.2099</p>
+                                    </div>
+                                    <div className="donuts__edit__section">
+                                        <div className="donuts__price">
+                                           <div className="subsection"> <p>{donut.price}</p> <img src="./images/coin.png" /></div>
+                                        </div>
+                                        {/* <p>Is Comestible? : {donut.isComestible ? 'Yes' : 'No'}</p> */}
+                                        <div className="edit__section">
+                                            {this.isDonutOwner(donut) &&
+                                            <a href="" onClick={() => this.editDonut(donut._id)}><img src="./images/edit.png" /></a>}
+                                        </div>
+                                        <div className="delete__section">
+                                            {this.isDonutOwner(donut) &&
+                                            <a href="" onClick={() => this.removeDonut(donut._id)}><img src="./images/garbage.png" /></a>}
+                                        </div>  
+                                    </div>  
+                                </div>                            
                             </div>
                         )
                     })
                 }
-                <a href="" onClick={() => FlowRouter.go('donuts.create')}>Create a donut</a>
+                {/* <a href="" onClick={() => FlowRouter.go('donuts.create')}>Create a donut</a> */}
             </div>
         )
     }

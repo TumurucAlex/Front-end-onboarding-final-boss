@@ -50,6 +50,9 @@ body{
                         &:focus{
                             outline: none;
                         }
+                        &::placeholder{
+                            color:white;
+                        }
                         border-top-left-radius: 20px;
                         border-bottom-left-radius: 20px;
                         background-color: #f06eaa;

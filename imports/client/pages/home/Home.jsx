@@ -38,6 +38,7 @@ class Home extends Component {
                             now prevent carried she get see sitting. Up twenty limits as months. Inhabit 
                             so perhaps of in to certain.
                         </p>
+                        <img src="./images/arrow.png" />
                     </div>
                 </div>
                     <div className="articles">

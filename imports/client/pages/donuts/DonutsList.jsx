@@ -49,7 +49,10 @@ class DonutsList extends React.Component {
                                         {/* <p>Is Comestible? : {donut.isComestible ? 'Yes' : 'No'}</p> */}
                                         <div className="edit__section">
                                             {this.isDonutOwner(donut) &&
-                                            <a href="" onClick={() => this.editDonut(donut._id)}><img src="./images/edit.png" /></a>}
+                                            <a href=""
+                                             //onClick={() => this.editDonut(donut._id)}
+                                             onClick={this.props.visibility}
+                                             ><img src="./images/edit.png" /></a>}
                                         </div>
                                         <div className="delete__section">
                                             {this.isDonutOwner(donut) &&

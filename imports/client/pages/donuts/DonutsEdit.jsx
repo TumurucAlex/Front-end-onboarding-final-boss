@@ -1,6 +1,7 @@
 import React from 'react';
 import {AutoForm, AutoField, ErrorField} from 'uniforms-unstyled';
 import DonutsSchema from '/imports/db/donuts/schema';
+import "../../../ui/scss/index.scss";
 
 export default class DonutsEdit extends React.Component {
     constructor() {
@@ -22,13 +23,13 @@ export default class DonutsEdit extends React.Component {
     }
 
 
-    onSubmit = (data) => {
-        Meteor.call('donut.edit', this.donutId, data, (err) => {
-            if (!err) {
-                FlowRouter.go('donuts.list');
-            }
-        });
-    };
+    // onSubmit = (data) => {
+    //     Meteor.call('donut.edit', this.donutId, data, (err) => {
+    //         if (!err) {
+    //             FlowRouter.go('donuts.list');
+    //         }
+    //     });
+    // };
 
     render() {
         const {loading, donut} = this.state;
@@ -36,21 +37,31 @@ export default class DonutsEdit extends React.Component {
             return <div>Loading...</div>
         }
         return (
-            <main>
+            <main className="edit__popup">
+                <h1> Edit the donut you want</h1>
+                <p1>will take a few seconds</p1>
                 <AutoForm schema={DonutsSchema} onSubmit={this.onSubmit} model={donut}>
-                    <AutoField name="name"/>
-                    <ErrorField name="name"/>
+                   
+                    <div className="name__input">
+                        <AutoField name="name"/>
+                        <ErrorField name="name"/>
+                    </div>
+                     <div className="price__input">
+                        <AutoField name="price"/>
+                        <ErrorField name="price"/>
+                    </div>
+                    
+                    <div className="comestible__input">
+                        <AutoField name="isComestible"/>
+                        <ErrorField name="isComestible"/>
+                    </div>
 
-                    <AutoField name="price"/>
-                    <ErrorField name="price"/>
-
-                    <AutoField name="isComestible"/>
-                    <ErrorField name="isComestible"/>
-
-                    <button type="submit">
+                    <button type="submit" onClick={this.props.handleVisibility}>
                         Edit donut
                     </button>
                 </AutoForm>
+                
+               
             </main>
         )
     }

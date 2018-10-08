@@ -7,9 +7,23 @@ import DonutArticle from './donutarticle';
 import DonutsList from '../donuts/DonutsList';
 import DonutsContainer from '../donuts/DonutsContainer';
 import Footer from './footer';
+import DonutsEdit from '../donuts/DonutsEdit';
 
 
 class Home extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            visibility:false
+        }
+        this.handleVisibility = this.handleVisibility.bind(this);
+    }
+
+    handleVisibility(){
+        this.setState({
+            visibility: !this.state.visibility
+        })
+    }
     render() {
         return (
            <div className="container">
@@ -53,10 +67,21 @@ class Home extends Component {
                         <p>don't take to long</p>
                         <DonutsCreate />
                     </div>
-
                 </div>
+                <div className={this.state.visibility ? ("editProduct") : ("noneDisplay") }>
+                    
+                            <DonutsEdit 
+                                visibility={this.state.visibility}
+                                handleVisibility={this.handleVisibility}
+                                />
+
+                  
+                </div>
+                
                 <div className="donuts__list">
-                    <DonutsList />
+                    <DonutsList 
+                        visibility={this.handleVisibility}
+                        />
                    <DonutsContainer />
                 </div>
                 <div className="footer__container">

@@ -1,3 +1,4 @@
+@media (min-width: 1191px){
 body{
     font-family: Arial;
     margin:0;
@@ -111,7 +112,7 @@ body{
                 float: left;
                 margin:auto;
                 p{
-                    font-size: 1em;
+                    font-size: 20px;
                     margin:auto;
                     padding: 15px 0px 0px 0px 
                 }
@@ -199,4 +200,6 @@ body{
         
     }
 }
+}
+
 }

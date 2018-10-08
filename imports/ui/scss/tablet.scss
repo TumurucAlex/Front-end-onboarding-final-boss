@@ -1,0 +1,633 @@
+@media (max-width: 1190px){
+        //add section 
+        .AddingProduct{
+            width: 100%;
+            height: 530px;
+            background-color: #bd8cbf;
+            .ProductAdd{
+                color:white;
+                width: 55%;
+                height: auto;
+                background-color: #440e62;
+                border-radius: 30px;
+                margin:auto;
+                padding: 20px;
+                text-align:center;
+                margin:auto;
+                
+                    h1{
+                        margin-bottom: 0px;
+                    }
+                    p{  margin-top: 5px;
+                        margin-bottom: 20px;
+                        font-size: 10px;
+                    }
+                    .donuts{
+                        width:90%;
+                        margin:auto;
+                        margin-bottom:30px;
+                      
+                        p{  
+                            margin-left: 10px;
+                            margin-bottom: 10px;
+                            text-align: left;
+                            font-size: 20px; 
+                        }
+                    }
+                    button{
+                        width: 90%;
+                        background-color:#f26d7d;padding: 10px 0px 10px 0px;
+                        color: white;
+                        border: none;
+                        font-size: 20px;
+                        border-radius: 10px ;
+                    }
+                    .name__input, .price__input{
+                        width:90%;
+                        margin:auto;
+        
+                        label{display:none;}
+        
+                        input{
+                            width:100%;
+                            box-sizing: border-box;
+                            margin-bottom: 20px;
+                            padding: 10px 10px 10px 10px ;
+                            font-size: 20px;
+                            border-radius: 10px;
+                            background-color: #ebebeb;
+                            border: 1px solid white;
+                        }
+                        
+                    }
+                .comestible__input{
+                    width: 90%;
+                    font-size: 20px;
+                    margin-bottom: 20px;
+                    margin:auto;
+                    label{float: left;
+                    margin-left: 10px;
+                    margin-bottom: 20px;}
+                }
+                .donuts__container{
+                    
+                    margin:auto;
+                    margin-bottom: 20px;
+                    width: 90%;
+                    img{
+                    width: 90px;
+                   padding: 2px;
+                    }   
+                    img:hover{
+                    padding: 2px;
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    }   
+                   
+                }
+               
+            }
+        }
+        //final add section 
+
+        //donutsbox-section
+        .donuts__box{
+            display:flex;
+            width: 100%;
+            justify-content: center;
+            margin-top: 200px;
+            .donuts__item{
+                background-color: white;
+                border-radius: 30px;
+                box-shadow: 0px 0px 20px rgba(134, 134, 134, 0.158);
+                width: 34%;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 10px;
+                padding: 20px;
+                img{
+                    width:100px;
+                    height: 100px;
+                }
+                h1{
+                    font-size: 20px;
+                }
+                p{text-align: center;}
+                .donuts__price{display:flex;}
+                .editing__elements{
+                    display: flex;
+                    margin-left: 40px;
+                }
+                .donuts__specification{
+                    display:flex;
+                    flex-direction: row;
+                    .subsection{
+                        
+                        display: flex;
+                        p{
+                            margin-top:0px;
+                            font-size: 20px;
+                            color: #004a80;
+                        }
+                    
+                        }
+                        img{
+                        width: 20px;
+                        height: 20px;
+                        margin-left: 10px
+                    }
+                }
+            }
+        }
+        //final 
+
+
+        //donuts list
+        .donuts__list{
+            width: 60%;
+            margin: auto;
+            height: auto;
+            margin-top: 300px;
+            display: block;
+            .donuts__list__container{
+                
+                display:flex;
+                flex-direction: row;
+              
+                width:100%;
+                margin:auto;
+                background-color: white;
+                border-radius: 30px;
+                box-shadow: 0px 0px 20px rgba(134, 134, 134, 0.158);
+                margin-bottom: 50px;
+                .donuts__image{
+                    display:flex;
+                    margin-left: 20px;
+                    order:1;
+                    img{
+                        
+                        width:100px;
+                        height: 100px;
+                        padding: 10px 0px 0px 0px ;
+                    }
+                }
+                .donuts__specs{
+                    width:83%;
+                    display: flex;
+                    order:2;
+                    .donuts__name{
+                        margin-left: 30px;
+                        h1
+                        {
+                            font-weight: 400;
+                            font-size:20px;
+                            margin-top: 30px;
+                            margin-bottom: 10px;
+                        }
+                        p{
+                            font-size: 15px;
+                            margin-top: 0px;
+                        }
+                    }
+                    .donuts__edit__section{
+                        width: 70%;
+                        display:flex;
+                        padding:36px 0px 0px 23px;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        margin-left: 2rem;
+                        box-sizing: border-box;
+        
+        
+                        .donuts__price{
+                            padding: 10px 10px 30px 10px;
+                            order: 1;
+                            display:flex;
+                            font-size: 29px;
+                            justify-content: center;
+                            color: #004a80;
+                           
+                           .subsection{
+                               float:left;
+                           }
+                           p{   
+                            
+                               float:left;
+                               margin:0;
+                           }
+                           img{margin-left: 10px;}
+        
+                        }
+                        .edit__section{
+                            display: flex;
+                            order:2;
+                            img{
+                                width: 40px;
+                                height:auto;
+                            }
+                        }
+                        .delete__section{
+                            display: flex;
+                            order:3;
+                            img{
+                                width: 40px;
+                                height:auto;
+                            }
+                        }
+                    }
+                }
+            }
+        
+        }
+
+        //final 
+
+        //donuts header
+
+        container{
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            top:0;
+        }
+        .NavBar{
+            top:0;
+            margin-top:0;
+            width:100%;
+            background-color: #fbaf5d;
+            height: 70px;
+            box-shadow: 0px 0px 30px rgba(32, 32, 32, 0.822);
+        }
+        .NavBar__logo{
+            margin:0;
+            float:left;
+            display: flex;
+            width: 39%;
+            font-family: Arial;
+            font-size: 35px;
+            color: white;
+            font-weight: bold;
+            sup{
+                font-size: 10px;
+               padding: 5px;
+               letter-spacing:0;
+            }
+            p{
+               margin-top: 12px;
+                margin-left: 20%;
+                letter-spacing: -2px;
+            }
+        
+        } 
+        .NavBar__notification{
+            width:49%;
+            margin:0;
+           float: right;
+           .NavBar__notification__icon{
+               float: right;
+               margin-right: 20%;
+             img{
+                 width: 30px;
+                 height: auto;
+                 margin-top: 20px ;
+             }
+           }
+        }
+        
+        
+        .Auth{
+           
+            display:flex;
+            width: 80%;
+            
+            margin: auto;
+            margin-top: 10%;
+            .Login{
+               display: flex;
+                text-align: center;
+                display:flex;
+                order:1;
+                width: 100%;
+                .cc-main{
+                    width:100%;
+                    padding: 0px 20px 0px 20px;
+                }
+                label{display:none;}
+                .email{
+                     margin-bottom:30px;
+                    input{
+                        box-sizing: border-box;
+                        width:100%;
+                        padding:15px 0px 15px 10px;
+                        border-radius:10px;
+                        background-color:#ebebeb;
+                        border: 1px solid white;
+                    }
+                }
+                .password{
+                    margin-bottom:20px;
+                    input{
+                        box-sizing: border-box;
+                        width:100%;
+                        padding:15px 0px 15px 10px;
+                        border-radius:10px;
+                        background-color:#ebebeb !important;
+                        border: 1px solid white;
+                    }
+                }
+                .login__section{
+                    
+                    width:100%;
+                    height:53px;;
+                    background-color: #8781bd;
+                    border-radius: 10px;
+                    text-align:center;
+                    .prop__section{  text-align:center;
+                        display:flex;
+                        color:white;
+                        font-size: 20px;
+                        margin:auto;
+                        order:1;
+                        width:63%;
+                        float: left;
+                        margin:auto;
+                        p{
+                            font-size: 20px;
+                            margin:auto;
+                            padding: 15px 0px 0px 0px 
+                        }
+                    }
+                
+                        .login__button{background-color: #00bff3;
+                        text-align:center;
+                        margin-left:12px;
+                        float:right;
+                        color:white;
+                        border-radius: 10px; 
+                        padding: 15px;
+                        font-size: 20px;
+                        border:none;
+                    }
+                    
+            }
+               
+            }
+            .Register{
+                display:flex;
+                margin:auto;
+                display:flex;
+                order:2;
+                width:100%;
+               
+                .cc-main{
+                    width:100%;
+                    padding: 0px 20px 0px 20px;
+                }
+                label{display:none;}
+                .email{
+                    margin-bottom:30px;
+                    input{
+                        border: 1px solid white;
+                        box-sizing: border-box;
+                        width:100%;
+                        padding:15px 0px 15px 10px;
+                        border-radius:10px;
+                        background-color:#ebebeb;
+                    }
+                }
+                .password{
+                    margin-bottom:30px;
+                    input{
+                        border: 1px solid white;
+                        box-sizing: border-box;
+                        width:100%;
+                        padding:15px 0px 15px 10px;
+                        border-radius:10px;
+                        background-color:#ebebeb;
+                    }
+                }
+                .cpassword{
+                    margin-bottom:30px;
+                    input{
+                        border: 1px solid white;
+                        box-sizing: border-box;
+                        width:100%;
+                        padding:15px 0px 15px 10px;
+                        border-radius:10px;
+                        background-color:#ebebeb;
+                    }
+                }
+                button{
+                    border: 1px solid white;
+                    color: white;
+                    background-color: #00bff3;
+                    text-align:center;
+                    width:100%;
+                    border-radius: 10px; 
+                    padding:15px 0px 15px 10px;
+                    font-size: 20px;
+                }
+            }
+        .title__container{
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+            float: left;
+            sup{
+                font-size: 20px;
+                color: grey;
+                margin-left: 10px;
+                
+            }
+        }
+        }
+
+        
+        //final 
+
+
+        //donuts footer
+        body{
+            height: 100%;
+            width: 100%;
+            margin:0;
+        }
+        .footer__container{
+            display: flex;
+            margin-top: 200px;
+           
+            width: 100%;
+            height: 600px;
+            background-color: white;
+            box-shadow: 0px 0px 20px rgba(134, 134, 134, 0.158);
+            justify-content: center;
+           
+            .footer__row{
+                display:flex;
+                justify-content: center;
+                width: 80%;
+               color:white;
+                flex-direction: column;
+                .footer{
+                    margin:auto;
+                    width:80%;
+                    display:flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-flow: column;
+                        h1{ 
+                            margin-top: 20px;
+                            width:50%;
+                            font-size: 25px;
+                            margin:auto;
+                            color:#aca8a8;
+                        }
+                        .first__section{
+                            width: 100%;
+                            text-align: center;
+                        }
+                        .second__section{
+                            width: 100%;
+                            display: inline-block;
+                            text-align: center;
+        
+        
+                            p{
+                                color: #f3c620;
+                                font-size: 25px;
+                                font-weight: bold;
+                              
+                            }
+                            input{
+                                width:49%;
+                                &:focus{
+                                    outline: none;
+                                }
+                                &::placeholder{
+                                    color:white;
+                                }
+                                border-top-left-radius: 20px;
+                                border-bottom-left-radius: 20px;
+                                background-color: #f06eaa;
+                                border:1px solid white;
+                                padding: 20px;
+                                box-sizing: border-box;
+                                color: white !important;
+                                font-size: 20px;display: inline;
+                            }
+                            button{
+                                padding: 20px;
+                                width: 30%;
+                                background-color: #fbaf5d;
+                                color: white;
+                                font-size:20px;
+                                border-radius: 20px;
+                                margin-left:-20px;
+                                border: none;
+                                display: inline;
+        
+                            }
+                            
+                        }
+        
+        
+                    
+                }
+            }
+            .copyright__section{
+                display: block;
+                text-align: center;
+               
+                font-family: Arial;
+                font-size: 35px;
+                color: #ecc755;
+                font-weight: bold;
+                    sup{
+                        font-size: 10px;
+                       padding: 5px;
+                       letter-spacing:0;
+                    }
+                    p{
+                       margin-top: 12px;
+                        
+                        letter-spacing: -2px;
+                    }
+                
+                }
+        }
+    
+        //final
+
+        //pubsection
+        .pub__container{
+    
+            margin-top: 15%;
+            width: 100%;
+            background-image: url('./images/Rectangle.png');
+            height: 600px;
+            background-position: center;
+            background-size: 100% 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        
+            .text__container{
+                width: 400px;
+                justify-content: center;
+                height:auto;
+                margin-left: 90px;
+                h1{
+                    color:#fec342;
+                }
+            }
+            img{
+                margin-top: 100px;
+            }
+        
+        }
+        .separator{width: 100%;
+        height: 100px;
+        background-color:#bd8cbf; }
+        .articles{
+            width: 100%;
+            display:flex;
+            justify-content: center;
+            h1{
+                color: #fec342;
+                font-size: 20px;
+                margin-bottom: 20px;
+                
+            }
+            .article{
+                justify-content: center;
+                padding: 20px;
+                width: 33.3%;
+                height: 20rem;
+                box-sizing: border-box;
+                overflow: hidden;
+                
+                &.first{
+                   float: left;
+                    background-color: #ebebeb;
+                }
+                &.second{
+                    background-color: #ebeaea;
+                    float:left;
+                    h1{
+                      
+                        margin-bottom: 90px;
+                        }
+                    }
+                &.third{
+                    background-color: #e7e5e5;
+                    float: left;
+                    h1{
+                      
+                        margin-bottom: 70px;}
+                }
+            }
+        }
+        
+    }

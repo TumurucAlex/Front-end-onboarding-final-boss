@@ -10,7 +10,7 @@ export default class DonutsCreate extends React.Component {
     onSubmit = (data) => {
         Meteor.call('donut.create', data, (err) => {
             if(!err) {
-                FlowRouter.go('donuts.list');
+                FlowRouter.go('home');
             }
         });
     };

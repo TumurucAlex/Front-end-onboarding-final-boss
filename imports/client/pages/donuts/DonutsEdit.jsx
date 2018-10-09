@@ -1,7 +1,7 @@
 import React from 'react';
 import {AutoForm, AutoField, ErrorField} from 'uniforms-unstyled';
 import DonutsSchema from '/imports/db/donuts/schema';
-import "../../../ui/scss/index.scss";
+import "./edit.css";
 
 export default class DonutsEdit extends React.Component {
     constructor() {
@@ -23,13 +23,13 @@ export default class DonutsEdit extends React.Component {
     }
 
 
-    // onSubmit = (data) => {
-    //     Meteor.call('donut.edit', this.donutId, data, (err) => {
-    //         if (!err) {
-    //             FlowRouter.go('donuts.list');
-    //         }
-    //     });
-    // };
+    onSubmit = (data) => {
+        Meteor.call('donut.edit', this.donutId, data, (err) => {
+            if (!err) {
+                FlowRouter.go('home');
+            }
+        });
+    };
 
     render() {
         const {loading, donut} = this.state;
@@ -38,8 +38,9 @@ export default class DonutsEdit extends React.Component {
         }
         return (
             <main className="edit__popup">
+                <div className="editBox">
                 <h1> Edit the donut you want</h1>
-                <p1>will take a few seconds</p1>
+                <p>will take a few seconds</p>
                 <AutoForm schema={DonutsSchema} onSubmit={this.onSubmit} model={donut}>
                    
                     <div className="name__input">
@@ -56,12 +57,14 @@ export default class DonutsEdit extends React.Component {
                         <ErrorField name="isComestible"/>
                     </div>
 
-                    <button type="submit" onClick={this.props.handleVisibility}>
+                    <button type="submit" 
+                    //onClick={this.props.handleVisibility}
+                    >
                         Edit donut
                     </button>
                 </AutoForm>
                 
-               
+                </div>
             </main>
         )
     }

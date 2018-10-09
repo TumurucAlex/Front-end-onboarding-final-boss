@@ -14,7 +14,7 @@ class Home extends Component {
     constructor(props){
         super(props);
         this.state={
-            visibility:false
+            visibility:true
         }
         this.handleVisibility = this.handleVisibility.bind(this);
     }
@@ -68,7 +68,7 @@ class Home extends Component {
                         <DonutsCreate />
                     </div>
                 </div>
-                <div className={this.state.visibility ? ("editProduct") : ("noneDisplay") }>
+                <div className={this.state.visibility ? ("noneDisplay") : ("editProduct") }>
                     
                             <DonutsEdit 
                                 visibility={this.state.visibility}

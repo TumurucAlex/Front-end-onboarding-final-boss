@@ -1,0 +1,133 @@
+/* body{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+} */
+.edit__popup {
+   
+    width:59%;
+    margin:auto;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 55px;
+    justify-content: center;
+    background-color: #f3c620;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .edit__popup p{text-align: center;
+margin-top: 0px;}
+.edit__popup h1{text-align: center;
+    margin-top: 0px;}
+  .edit__popup form {
+    width: 100%;
+  }
+  .edit__popup .price__input {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column;
+  }
+  .edit__popup .price__input input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 10px;
+  }
+  .edit__popup .name__input {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column;
+  }
+  .edit__popup .name__input input {
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+  }
+  .edit__popup .comestible__input {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  .edit__popup .comestible__input label {
+    float: left;
+    padding-right: 30px;
+  }
+  .edit__popup button {
+    background-color: #f06eaa;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+  }
+
+  @media (max-width: 900px){
+    .edit__popup {
+        border-radius: 20px;
+        box-sizing: border-box;
+        padding: 55px;
+        width: 100%;
+        background-color: #f3c620;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+      }
+      .edit__popup form {
+        width: 100%;
+      }
+      .edit__popup .price__input {
+        margin-top: 20px;
+        display: flex;
+        flex-flow: column;
+      }
+      .edit__popup .price__input input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid white;
+        margin-top: 10px;
+      }
+      .edit__popup .name__input {
+        margin-top: 20px;
+        display: flex;
+        flex-flow: column;
+      }
+      .edit__popup .name__input input {
+        margin-top: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid white;
+      }
+      .edit__popup .comestible__input {
+        font-size: 25px;
+        margin-top: 20px;
+      }
+      .edit__popup .comestible__input label {
+        float: left;
+        padding-right: 30px;
+      }
+      .edit__popup button {
+        background-color: #f06eaa;
+        width: 100%;
+        padding: 20px;
+        font-size: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+      }
+
+  }

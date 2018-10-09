@@ -8,6 +8,7 @@ import DonutsList from '../donuts/DonutsList';
 import DonutsContainer from '../donuts/DonutsContainer';
 import Footer from './footer';
 import DonutsEdit from '../donuts/DonutsEdit';
+//import {arrow} from "./images/arrow.png";
 
 
 class Home extends Component {
@@ -33,7 +34,7 @@ class Home extends Component {
                     </div>
                     <div className="NavBar__notification">
                         <div className="NavBar__notification__icon">
-                            <img src="./images/bell.png"  />
+                            <img src="/images/bell.png"  />
                         </div>
                     </div>
                 </div>
@@ -52,7 +53,7 @@ class Home extends Component {
                             now prevent carried she get see sitting. Up twenty limits as months. Inhabit 
                             so perhaps of in to certain.
                         </p>
-                        <img src="./images/arrow.png" />
+                        <img src="/images/arrow.png" />
                     </div>
                 </div>
                     <div className="articles">
